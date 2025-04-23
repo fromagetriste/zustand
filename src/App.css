@@ -1,42 +1,36 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.wrapper {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.My-Counter {
+  font-size: 3rem;
+  color: dodgerblue;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.count {
+  font-size: 3rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.buttons-wrapper {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
-.card {
-  padding: 2em;
+.counter-button {
+  padding: 1rem 3rem;
+  background-color: darkgrey;
+  color: white;
+  cursor: pointer;
+  font-size: 2rem;
+  border-radius: 10px;
 }
 
-.read-the-docs {
-  color: #888;
+.counter-button:hover {
+  background-color: rgb(218, 218, 218);
+  transition: 0.3s;
 }
